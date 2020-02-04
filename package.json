@@ -1,0 +1,35 @@
+{
+  "name": "cordova-plugin-os-theme",
+  "description": "Get information about the os theme (light / dark modes).",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidBriglio/cordova-plugin-os-theme"
+  },
+  "bugs": {
+    "url": "https://github.com/DavidBriglio/cordova-plugin-os-theme/issues"
+  },
+  "homepage": "https://github.com/DavidBriglio/cordova-plugin-os-theme#readme",
+  "cordova": {
+    "id": "cordova-plugin-os-theme",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "ecosystem:phonegap",
+    "cordova-ios",
+    "cordova-android",
+    "os",
+    "theme",
+    "light",
+    "dark",
+    "mode",
+    "android",
+    "ios"
+  ],
+  "author": "David Briglio",
+  "license": "MIT"
+}

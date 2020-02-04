@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:amazon="http://schemas.android.com/apk/lib/com.amazon.device.ads" xmlns:rim="http://www.blackberry.com/ns/widgets" id="cordova-plugin-os-theme" version="1.0.0">
+  <name>Os Theme</name>
+  <description>Get information about the os theme (light / dark modes).</description>
+  <license>MIT</license>
+  <js-module src="theme.js" name="osTheme">
+    <clobbers target="cordova.plugins.osTheme" />
+  </js-module>
+  <platform name="android">
+    <config-file target="config.xml" parent="/*">
+      <feature name="OsTheme">
+        <param name="android-package" value="com.dbriglio.ostheme.OsTheme" />
+      </feature>
+    </config-file>
+    <source-file src="src/android/OsTheme.java" target-dir="src/com/dbriglio/ostheme" />
+  </platform>
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="OsTheme">
+        <param name="ios-package" value="OsTheme" />
+      </feature>
+    </config-file>
+    <source-file src="src/ios/OsTheme.swift" />
+  </platform>
+</plugin>
