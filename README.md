@@ -23,12 +23,16 @@ This plugin has one method: `getTheme()` that will return a promise that will in
 ```javascript
 cordova.plugins.osTheme.getTheme()
   .then(theme => { // { isDark: [boolean] }
-    console.log('The current theme is: ' + theme.isDark ? 'Dark' : 'Light')
+    console.log('The current theme is: ' + (theme.isDark ? 'Dark' : 'Light'))
   })
   .catch(message => { // string error message
     console.log('Error getting theme: ' + message)
   })
 ```
+
+## Compatibility
+
+This plugin can be used for `android`, and `iOS` version `13.0.0+`!
 
 ## License
 
