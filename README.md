@@ -1,4 +1,4 @@
-# cordova-plugin-os-theme
+# cordova-plugin-os-theme [![npm version](https://badge.fury.io/js/cordova-plugin-os-theme.svg)](https://badge.fury.io/js/cordova-plugin-os-theme)
 
 This plugin is designed to return information about the current os theme (android and iOS).
 
