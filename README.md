@@ -16,7 +16,7 @@ cordova plugin add https://github.com/DavidBriglio/cordova-plugin-os-theme.git
 
 ## Useage
 
-This plugin has one method: `getTheme()` that will return a promise that will in turn receive an object with the current os theme properties. Currently there is only one property being tracked: `isDark`. This will be set to `true` only if dark mode is confirmed active. If we do not know the state of the theme or it is in light mode, `isDark` will be `false`.
+This plugin has one method: `cordova.plugins.osTheme.getTheme()` that will return a promise that will in turn receive an object with the current os theme properties. Currently there is only one property being tracked: `isDark`. This will be set to `true` only if dark mode is confirmed active. If we do not know the state of the theme or it is in light mode, `isDark` will be `false`.
 
 ### Example
 
@@ -36,7 +36,7 @@ This plugin can be used for `android`, and `iOS` version `13.0.0+`!
 
 ## License
 
-MIT. Please see license file for full details.
+MIT - Please see license file for full details.
 
 ## Questions
 
