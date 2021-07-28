@@ -8,4 +8,10 @@
     
     self.commandDelegate!.send(pluginResult, callbackId: command.callbackId)
   }
+
+  override func traitCollectionDidChange(_ previousCollection: UITraitCollection?) {
+    super.traitCollectionDidChange(previousCollection)
+
+    let isDark = UIScreen.main.traitCollection.userInterfaceStyle == .dark
+  }
 }
